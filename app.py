@@ -129,7 +129,7 @@ st.set_page_config(page_title="WSU Scholarship Tool", layout="centered")
 st.title("🎓 WSU Scholarship Assignment Tool")
 
 with st.sidebar:
-    st.image("https://upload.wikimedia.org/wikipedia/en/thumb/8/88/Washington_State_University_logo.svg/320px-Washington_State_University_logo.svg.png", width=150)
+    st.image("wsu-shield-mark.png", width=150)
     dept = st.selectbox("Department", DEPARTMENTS)
     sheet_name = st.text_input("New Sheet Name")
     uploaded_file = st.file_uploader("Upload your student Excel file", type="xlsx")
