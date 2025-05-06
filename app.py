@@ -5,7 +5,7 @@ import smartsheet
 import os
 
 # --- CONFIG ---
-SMARTSHEET_TOKEN = st.secrets["r7cpFSozLL2DOJ8Kg4rH0sK5fYFfyNdVCFXgR"]
+SMARTSHEET_TOKEN = st.secrets["SMARTSHEET_TOKEN"]
 
 DEPARTMENTS = [
     "Chemical Engineering and Bioengineering",
