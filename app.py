@@ -126,13 +126,11 @@ def update_remaining_award_in_sheet(ss, sheet_id, df_sch, col_map, original_rows
 
 # --- STREAMLIT UI ---
 st.set_page_config(page_title="WSU Scholarship Tool", layout="centered")
-st.title("🎓 WSU Scholarship Assignment Tool")
+st.title("🎓 VCEA Scholarship Assignment")
 
 with st.sidebar:
-    st.markdown(
-    "<div style='text-align: center;'><img src='wsu-shield-mark.png' width='150'></div>",
-    unsafe_allow_html=True
-)
+    st.image("wsu-shield-mark.png", width=150)
+
     dept = st.selectbox("Department", DEPARTMENTS)
     sheet_name = st.text_input("New Sheet Name")
     uploaded_file = st.file_uploader("Upload your student Excel file", type="xlsx")
